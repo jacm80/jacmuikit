@@ -1,0 +1,8 @@
+android
+ios
+node_modules
+App.js
+#src/features/home
+#src/features/navigation/appNavigator.js
+#src/features/navigation/rootNavigator.js
+store.js

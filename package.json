@@ -5,7 +5,21 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "storybook": "storybook start -p 7007",
+    "prestorybook": "rnstl",
+    "run-ios6": "react-native run-ios --simulator='iPhone 6'",
+    "clean-cache": "./cleanCache"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src",
+        "./packages"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "dependencies": {
     "react": "16.8.6",
@@ -14,11 +28,19 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/runtime": "^7.5.5",
+    "@kadira/react-native-storybook": "^2.0.0",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-ondevice-knobs": "^5.1.9",
+    "@storybook/react-native": "^5.1.9",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.55.0",
+    "react-dom": "^16.8.6",
     "react-test-renderer": "16.8.6"
   },
   "jest": {
