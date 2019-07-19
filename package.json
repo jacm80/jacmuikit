@@ -1,25 +1,15 @@
 {
   "name": "jacmuikit",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "main": "./src/index.js",
   "private": false,
   "scripts": {
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
     "storybook": "storybook start -p 7007",
-    "prestorybook": "rnstl",
     "run-ios6": "react-native run-ios --simulator='iPhone 6'",
     "clean-cache": "./cleanCache"
-  },
-  "config": {
-    "react-native-storybook-loader": {
-      "searchDir": [
-        "./src",
-        "./packages"
-      ],
-      "pattern": "**/*.stories.js",
-      "outputFile": "./storybook/storyLoader.js"
-    }
   },
   "dependencies": {
     "react": "16.8.6",
